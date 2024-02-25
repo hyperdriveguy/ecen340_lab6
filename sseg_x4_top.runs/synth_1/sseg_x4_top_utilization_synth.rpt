@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Sat Feb 24 17:17:13 2024
-| Host         : cachy-framework running 64-bit CachyOS
+| Date         : Sat Feb 24 21:35:55 2024
+| Host         : carson-yeet running 64-bit CachyOS
 | Command      : report_utilization -file sseg_x4_top_utilization_synth.rpt -pb sseg_x4_top_utilization_synth.pb
 | Design       : sseg_x4_top
 | Device       : xc7a35tcpg236-1

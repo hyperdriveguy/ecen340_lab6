@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Sat Feb 24 17:17:30 2024
-| Host         : cachy-framework running 64-bit CachyOS
+| Date         : Sat Feb 24 21:38:25 2024
+| Host         : carson-yeet running 64-bit CachyOS
 | Command      : report_control_sets -verbose -file sseg_x4_top_control_sets_placed.rpt
 | Design       : sseg_x4_top
 | Device       : xc7a35t
@@ -70,12 +70,12 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+---------------+------------------+------------------+----------------+--------------+
-|      Clock Signal      | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------+---------------+------------------+------------------+----------------+--------------+
-|  nolabel_line17/out[0] |               | btnC_IBUF        |                1 |              2 |         2.00 |
-|  nolabel_line17/out[0] | p_0_in        |                  |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG         |               |                  |                6 |             23 |         3.83 |
-+------------------------+---------------+------------------+------------------+----------------+--------------+
++----------------+---------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------+------------------+------------------+----------------+--------------+
+|  clocky/out[0] |               | btnC_IBUF        |                1 |              2 |         2.00 |
+|  clocky/out[0] | p_0_in        |                  |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG |               |                  |                6 |             23 |         3.83 |
++----------------+---------------+------------------+------------------+----------------+--------------+
 
 

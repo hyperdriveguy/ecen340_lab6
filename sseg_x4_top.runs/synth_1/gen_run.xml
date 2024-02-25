@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1708820209" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sseg_x4_top.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="sseg_x4_top_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1708835733" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sseg_x4_top.dcp">
   <File Type="RDS-DCP" Name="sseg_x4_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="sseg_x4_top_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="sseg_x4_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="sseg_x4_top_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="sseg_x4_top.vds"/>
-  <File Type="REPORTS-TCL" Name="sseg_x4_top_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="sseg_x4_top_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="sseg_x4_top.tcl"/>
+  <File Type="RDS-UTIL" Name="sseg_x4_top_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sseg_x4_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sseg_x4_top.vds"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/clk_gen.v">

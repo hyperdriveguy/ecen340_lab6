@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="49391" HostCore="8" HostMemory="16156564">
+    <Process Command="vivado" Owner="carson" Host="carson-yeet" Pid="3198" HostCore="16" HostMemory="65688992">
     </Process>
 </ProcessHandle>

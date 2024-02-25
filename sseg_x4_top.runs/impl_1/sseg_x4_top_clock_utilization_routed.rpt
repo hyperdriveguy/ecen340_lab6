@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Sat Feb 24 17:17:40 2024
-| Host         : cachy-framework running 64-bit CachyOS
+| Date         : Sat Feb 24 21:38:36 2024
+| Host         : carson-yeet running 64-bit CachyOS
 | Command      : report_clock_utilization -file sseg_x4_top_clock_utilization_routed.rpt
 | Design       : sseg_x4_top
 | Device       : 7a35t-cpg236
@@ -66,11 +66,11 @@ Table of Contents
 4. Local Clock Details
 ----------------------
 
-+----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------+-----------------------+
-| Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                       | Net                   |
-+----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------+-----------------------+
-| 0        | FDRE/Q          | None       | SLICE_X64Y33/CFF | X1Y0         |           9 |               2 |              |       | nolabel_line17/counter_reg[18]/Q | nolabel_line17/out[0] |
-+----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------+-----------------------+
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------+---------------+
+| Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin               | Net           |
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------+---------------+
+| 0        | FDRE/Q          | None       | SLICE_X64Y33/CFF | X1Y0         |           9 |               2 |              |       | clocky/counter_reg[18]/Q | clocky/out[0] |
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+--------------------------+---------------+
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 *** Non-Clock Loads column represents cell count of non-clock pin loads

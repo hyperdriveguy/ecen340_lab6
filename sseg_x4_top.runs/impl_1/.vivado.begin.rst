@@ -1,120 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="4144" HostCore="8" HostMemory="16156564">
+    <Process Command="vivado" Owner="carson" Host="carson-yeet" Pid="3618" HostCore="16" HostMemory="65688992">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="7202" HostCore="8" HostMemory="16156564">
+    <Process Command="vivado" Owner="carson" Host="carson-yeet" Pid="6532" HostCore="16" HostMemory="65688992">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="8259" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="10305" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="11567" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="13662" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="14511" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="16028" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="20766" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="22285" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="23886" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="25425" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="28095" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="30090" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="34454" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="35950" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="39020" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="40549" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="41747" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="43216" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="45283" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="46798" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="47754" HostCore="8" HostMemory="16156564">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="49695" HostCore="8" HostMemory="16156564">
+    <Process Command="vivado" Owner="carson" Host="cachy-framework" Pid="12473" HostCore="8" HostMemory="16156556">
     </Process>
 </ProcessHandle>

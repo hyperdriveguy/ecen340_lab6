@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"sseg_x4_top_tb_func_synth.v" \
+"../../../../../sseg_x4_top.srcs/sim_1/new/sseg_x4_top_tb.v" \
+
+# Do not sort compile order
+nosort

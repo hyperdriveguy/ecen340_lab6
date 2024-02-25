@@ -36,6 +36,7 @@ module sseg_x4_top_tb();
     // Test conditions
     initial
     begin
+        clk = 0;
         sw = 16'h0;
         #100
         sw = 16'hdead;
@@ -77,12 +78,6 @@ module sseg_x4_top_tb();
         $finish;
     end
     
-    initial
-    begin
-        forever begin
-            clk = 0;
-            #10 clk = ~clk;
-        end
-    end
+    always #10 clk = ~clk;
     
 endmodule
