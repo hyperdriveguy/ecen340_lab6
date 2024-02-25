@@ -35,7 +35,8 @@ module clk_gen(
         counter <= counter + 1;
     end
     
-    // 20 divisions, ~90 Hz
-    assign clk_div = counter[19];
+    // 18 divisions, ~381 Hz if starting with 100 MHz clock, 38.1 Hz if starting with 10 MHz
+    // Not sure if the initial clock is actually 100 MHz due to high flicker with higher divisions
+    assign clk_div = counter[18];
     
 endmodule

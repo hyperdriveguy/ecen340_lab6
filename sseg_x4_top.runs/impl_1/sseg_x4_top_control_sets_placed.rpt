@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Wed Feb 14 16:57:04 2024
+| Date         : Sat Feb 24 17:17:30 2024
 | Host         : cachy-framework running 64-bit CachyOS
 | Command      : report_control_sets -verbose -file sseg_x4_top_control_sets_placed.rpt
 | Design       : sseg_x4_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    15 |
-|    Minimum number of control sets                        |    15 |
+| Total control sets                                       |     3 |
+|    Minimum number of control sets                        |     3 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    95 |
+| Unused register locations in slices containing registers |     8 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    15 |
-| >= 0 to < 4        |    13 |
+| Total control sets |     3 |
+| >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |            5 |
-| No           | No                    | Yes                    |              10 |            9 |
-| No           | Yes                   | No                     |               4 |            4 |
+| No           | No                    | No                     |              23 |            6 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               7 |            2 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -70,24 +70,12 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------+---------------+---------------------------------+------------------+----------------+--------------+
-|           Clock Signal           | Enable Signal |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------------------+---------------+---------------------------------+------------------+----------------+--------------+
-|  switch_cycle_reg[1]_LDC_i_1_n_0 |               | switch_cycle_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  switch_cycle_reg[2]_LDC_i_1_n_0 |               | switch_cycle_reg[2]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  switch_cycle_reg[3]_LDC_i_1_n_0 |               | switch_cycle_reg[3]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[1]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[2]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[2]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[3]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[3]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | switch_cycle_reg[0]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  switch_cycle_reg[0]_LDC_i_1_n_0 |               | switch_cycle_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  nolabel_line46/out[0]           |               | btnC_IBUF                       |                1 |              2 |         2.00 |
-|  nolabel_line46/out[0]           | p_0_in        |                                 |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG                   |               |                                 |                5 |             20 |         4.00 |
-+----------------------------------+---------------+---------------------------------+------------------+----------------+--------------+
++------------------------+---------------+------------------+------------------+----------------+--------------+
+|      Clock Signal      | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+---------------+------------------+------------------+----------------+--------------+
+|  nolabel_line17/out[0] |               | btnC_IBUF        |                1 |              2 |         2.00 |
+|  nolabel_line17/out[0] | p_0_in        |                  |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG         |               |                  |                6 |             23 |         3.83 |
++------------------------+---------------+------------------+------------------+----------------+--------------+
 
 

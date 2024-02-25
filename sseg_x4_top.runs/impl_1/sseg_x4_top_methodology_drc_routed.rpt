@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Wed Feb 14 16:57:14 2024
+| Date         : Sat Feb 24 17:17:40 2024
 | Host         : cachy-framework running 64-bit CachyOS
 | Command      : report_methodology -file sseg_x4_top_methodology_drc_routed.rpt -pb sseg_x4_top_methodology_drc_routed.pb -rpx sseg_x4_top_methodology_drc_routed.rpx
 | Design       : sseg_x4_top
@@ -23,16 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 35
-+-----------+------------------+--------------------------------+------------+
-| Rule      | Severity         | Description                    | Violations |
-+-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 17         |
-| LUTAR-1   | Warning          | LUT drives async reset alert   | 8          |
-| TIMING-18 | Warning          | Missing input or output delay  | 5          |
-| TIMING-20 | Warning          | Non-clocked latch              | 4          |
-| LATCH-1   | Advisory         | Existing latches in the design | 1          |
-+-----------+------------------+--------------------------------+------------+
+             Violations found: 30
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 9          |
+| TIMING-18 | Warning          | Missing input or output delay | 21         |
++-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -81,134 +78,109 @@ Non-clocked sequential cell
 The clock pin seg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#10 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[0]_C/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[0]_P/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[1]_C/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[1]_P/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[2]_C/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[2]_P/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[3]_C/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Critical Warning
-Non-clocked sequential cell  
-The clock pin switch_cycle_reg[3]_P/C is not reached by a timing clock
-Related violations: <none>
-
-LUTAR-1#1 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[0]_C/CLR, switch_cycle_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#3 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#4 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[1]_C/CLR, switch_cycle_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#5 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#6 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[2]_C/CLR, switch_cycle_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#7 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#8 Warning
-LUT drives async reset alert  
-LUT cell switch_cycle_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) switch_cycle_reg[3]_C/CLR, switch_cycle_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
-An output delay is missing on JA[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on sw[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An output delay is missing on JA[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on sw[10] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on JA[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on sw[11] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on JA[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on sw[12] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
+An input delay is missing on sw[13] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sw[14] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on sw[15] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on sw[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sw[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on sw[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on sw[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on sw[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on sw[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on sw[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on sw[8] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on sw[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on JA[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on JA[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on JA[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on JA[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
 An output delay is missing on JA[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch switch_cycle_reg[0]_LDC cannot be properly analyzed as its control pin switch_cycle_reg[0]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch switch_cycle_reg[1]_LDC cannot be properly analyzed as its control pin switch_cycle_reg[1]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch switch_cycle_reg[2]_LDC cannot be properly analyzed as its control pin switch_cycle_reg[2]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch switch_cycle_reg[3]_LDC cannot be properly analyzed as its control pin switch_cycle_reg[3]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-LATCH-1#1 Advisory
-Existing latches in the design  
-There are 4 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
